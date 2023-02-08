@@ -1,0 +1,107 @@
+schedules:
+  - title: "[OSDI'22] Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference"
+    presenter: Mengyang Liu
+    date: Feb 7, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/oL97GlMJEADM
+      - title: Slides
+        url: /slides/REEF.pdf
+
+  - title: "[ATC'22] Tetris: Memory-efficient Serverless Inference through Tensor Sharing"
+    presenter: Haodong Tian
+    date: Jan 30, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/rYCLuoA7EVSf
+      - title: Slides
+        url: /slides/Tetris.pdf
+
+  - title: "[ATC'22] Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing"
+    presenter: Chenyu Lu
+    date: Jan 16, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/QItk9sCtnRMl
+      - title: Slides
+        url: /slides/Gpulet.pdf
+
+  - title: "[ATC'22] Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training"
+    presenter: Guangtong Li
+    date: Jan 9, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/3wejGnobNOHR
+      - title: Slides
+        url: /slides/Campo.pdf
+
+  - title: "[MobiSys'22] Melon: Breaking the Memory Wall for Resource-Efficient On-Device Machine Learning"
+    presenter: Ye Wan
+    date: December 26, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/BkcWtYkIeqC3
+      - title: Slides
+        url: /slides/Melon.pdf
+
+
+  - title: "[MobiCom'22] Romou: rapidly generate high-performance tensor kernels for mobile GPUs"
+    presenter: Mengyang Liu
+    date: December 19, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/uS6xPdn9NzCi
+      - title: Slides
+        url: /slides/Romou.pdf
+
+  - title: "[MobiCom'22] Real-time neural network inference on extremely weak devices: agile offloading with explainable AI"
+    presenter: Chenyu Lu
+    date: December 5, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/1BKlQNoChOlt
+      - title: Slides
+        url: /slides/AgileNN.pdf
+
+  - title: "[MobiSys'22] Band: coordinated multi-DNN inference on heterogeneous mobile processors"
+    presenter: Guangtong Li
+    date: November 28, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/TUIsg858C5VV
+      - title: Slides
+        url: /slides/BAND.pdf
+
+  - title: "[MobiSys'22] CoDL: Efficient CPU-GPU Co-Execution for Deep Learning Inference on Mobile Devices"
+    presenter: Ye Wan
+    date: November 21, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/ZMCR9ItoDoFt
+      - title: Slides
+        url: /slides/CoDL.pdf
+
+  - title: "[MobiSys'21] nn-Meter: Towards Accurate Latency Prediction of Deep-Learning Model Inference on Diverse Edge Devices"
+    presenter: Mengyang Liu
+    date: November 14, 2022.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/6r5oKfu8QCZO
+      - title: Slides
+        url: /slides/nn-Meter.pdf
+
+upcomings:
+  - "Mengyang Liu will present an OSDI'22 paper on Monday, Feb 6, 2023, at 7:00 p.m. (GMT+8)."
+
+links:
+  - title: Paper Pool is here.
+    url: https://jhagyscvrs.feishu.cn/sheets/shtcnXvN4tNwKVLO9K3dt2QgBae?sheet=18ce4c
+
+  - title: Guide is here.
+    url: /files/Guidance.pdf
+
+  - title: Join to update this website.
+    url: https://github.com/liu-mengyang/esg-seu-website/blob/main/How-To-Update.md
+
+layout:
+  schedulesPerPage: 5
