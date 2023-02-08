@@ -1,5 +1,5 @@
-import { createApp } from 'vue'
-import yaml from 'js-yaml'
+const { createApp } = Vue
+const yaml = jsyaml
 
 const CONFIG_URL = '/configs/config.yml'
 
