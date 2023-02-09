@@ -112,8 +112,8 @@ links:
 # The default primary color is teal, and the default accent color is pale-green.
 layout:
   schedulesPerPage: 5
-  primaryColor: deep-orange
-  accentColor: pale-red
+  primaryColor: teal
+  accentColor: pale-green
 
 global:
   header: Edge System Reading Group @ SEU
