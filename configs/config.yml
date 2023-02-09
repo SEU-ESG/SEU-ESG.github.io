@@ -1,4 +1,12 @@
 schedules:
+  - title: "[ATC'22] Soter: Guarding Black-box Inference for General Neural Networks at the Edge"
+    presenter: Ye Wan
+    date: Feb 13, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/XamoSoFq9K08
+      - title: Slides
+        url:
   - title: "[OSDI'22] Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference"
     presenter: Mengyang Liu
     date: Feb 7, 2023.
