@@ -101,7 +101,7 @@ links:
     url: /files/Guidance.pdf
 
   - title: Join to update this website.
-    url: https://github.com/liu-mengyang/esg-seu-website/blob/main/How-To-Update.md
+    url: https://github.com/SEU-ESG/SEU-ESG.github.io/blob/master/How-To-Update.md
 
 layout:
   schedulesPerPage: 5
