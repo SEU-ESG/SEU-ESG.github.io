@@ -101,15 +101,32 @@ schedules:
 upcomings:
   - "Mengyang Liu will present an OSDI'22 paper on Monday, Feb 6, 2023, at 7:00 p.m. (GMT+8)."
 
+# Refer to https://fontawesome.com/v4/icons/ for an ideal icon.
+# The default icon is fa-thumb-tack.
 links:
   - title: Paper Pool is here.
     url: https://jhagyscvrs.feishu.cn/sheets/shtcnXvN4tNwKVLO9K3dt2QgBae?sheet=18ce4c
+    icon: fa-paperclip
 
   - title: Guide is here.
     url: /files/Guidance.pdf
+    icon: fa-compass
 
-  - title: Join to update this website.
+  - title: How to contribute to this website?
     url: https://github.com/SEU-ESG/SEU-ESG.github.io/blob/master/How-To-Update.md
+    icon: fa-github
 
+  - title: Upload a new schedule.
+    url: https://github.com/SEU-ESG/SEU-ESG.github.io/edit/master/configs/config.yml
+    icon: fa-pencil
+
+# Refer to https://www.w3schools.com/w3css/w3css_colors.asp for an ideal color.
+# The default primary color is teal, and the default accent color is pale-green.
 layout:
   schedulesPerPage: 5
+  primaryColor: teal
+  accentColor: light-gray
+
+global:
+  header: Edge System Reading Group @ SEU
+  footer: 2023 SEU-ESG. Powered by Jekyll and GitHub Pages.

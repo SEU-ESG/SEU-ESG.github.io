@@ -1,94 +1,150 @@
 <!DOCTYPE html>
 <html>
-<title>Edge System Reading Group @ SEU</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/npm/vue@3.2.47/dist/vue.global.prod.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
-<style>
-  html,
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Roboto", sans-serif
-  }
-</style>
+  <title>Edge System Reading Group @ SEU</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.loli.net/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.prod.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  <link rel="stylesheet" href="/static/style.css" />
 
-<body class="w3-light-grey">
+  <body class="w3-light-grey" id="app">
+    <!-- Header -->
+    <div
+      class="w3-container w3-margin-bottom w3-padding w3-center"
+      :class="primaryColor.bg"
+    >
+      <h1>{{ global.header }}</h1>
+    </div>
 
-  <!-- Page Container -->
-  <div class="w3-content w3-margin-top" style="max-width:1400px;" id="app">
-    <h1>
-      <center><strong>Edge System Reading Group @ SEU</strong></center>
-    </h1>
-
-    <!-- The Grid -->
-    <div class="w3-row-padding">
-
-      <!-- Left Column -->
-      <div class="w3-third">
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-book fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Upcoming</h2>
-          <div v-for="upcoming in upcomings" class="w3-container">
-            <h4 class="w3-opacity"><i class="fa fa-certificate fa-fw w3-margin-right w3-large w3-text-teal"></i><b>{{
-                upcoming }}</b></h4>
-            <br>
-          </div>
-        </div>
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Useful Link</h2>
-          <div class="w3-container">
-
-            <p v-for="link in links"><i class="fa fa-thumb-tack fa-fw w3-margin-right w3-text-xxlarge w3-text-teal"></i>
-              <a :href="link.url" style="text-decoration:none">{{ link.title }}</a>
-            </p>
-            <br>
-          </div>
-        </div>
-
-        <!-- End Left Column -->
-      </div>
-
-      <!-- Right Column -->
-      <div class="w3-twothird">
-
-        <div class="w3-container w3-card w3-white w3-margin-bottom">
-          <h2 class="w3-text-grey w3-padding-16"><i
-              class="fa fa-institution fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Presentation Schedule</h2>
-
-          <div class="w3-container">
-            <div v-for="schedule in pages[currentPage - 1]">
-              <h4 class="w3-opacity"><b>{{ schedule.title }}</b></h4>
-              <h6 class="w3-text-teal"><i class="fa fa-users fa-fw w3-margin-right w3-large w3-text-teal"></i><b>
-                  {{ schedule.presenter }}</b></h6>
-              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right w3-large w3-text-teal"></i>{{
-                schedule.date }}
-                <!-- Manually add margin-left: 4px due to vue.js framework bugs -->
-                <span v-for="link in schedule.links" class="w3-tag w3-teal w3-round" style="margin-left: 4px"><a
-                    :href="link.url" style="text-decoration:none">{{ link.title }}</a></span>
-              </h6>
-              <hr>
+    <!-- Begin Page Container -->
+    <div class="w3-content w3-margin-top" style="max-width: 1400px">
+      <!-- Begin Grid -->
+      <div class="w3-row-padding">
+        <!-- Begin Left Column -->
+        <div class="w3-third">
+          <!-- Upcoming Widget -->
+          <div class="w3-container w3-white w3-margin-bottom">
+            <h2 class="w3-padding-16">
+              <i
+                class="fa fa-book fa-fw w3-margin-right w3-xxlarge"
+                :class="primaryColor.text"
+              ></i
+              ><b>Upcoming</b>
+            </h2>
+            <div class="w3-container w3-large">
+              <div
+                v-for="upcoming in upcomings"
+                class="w3-panel w3-leftbar"
+                :class="[primaryColor.border, accentColor.bg]"
+              >
+                <p>{{ upcoming }}</p>
+              </div>
             </div>
+            <br />
+          </div>
+          <!-- Useful Link Widget -->
+          <div class="w3-container w3-white w3-margin-bottom">
+            <h2 class="w3-padding-16">
+              <i
+                class="fa fa-shopping-bag fa-fw w3-margin-right w3-xxlarge"
+                :class="primaryColor.text"
+              ></i
+              ><b>Useful Link</b>
+            </h2>
+            <div class="w3-container w3-large">
+              <p v-for="link in links">
+                <i
+                  class="fa w3-margin-right"
+                  :class="[link.icon ? link.icon : 'fa-thumb-tack', primaryColor.text]"
+                  style="font-size: 1.3rem"
+                ></i>
+                <a :href="link.url" style="text-decoration: none"
+                  >{{ link.title }}</a
+                >
+              </p>
+            </div>
+            <br />
           </div>
 
-          <!-- Pagination Bar -->
-          <div class="w3-container w3-center w3-margin-bottom">
-            <div class="w3-show-inline-block">
-              <div class="w3-bar">
-                <button v-for="pagi in renderPagination(currentPage, totalPage)" class="w3-btn w3-border"
-                  :class="{ 'w3-teal': pagi === currentPage, 'w3-disabled': pagi === '...' }" :disabled="pagi === '...'"
-                  @click="() => { currentPage = pagi }">{{ pagi }}</button>
+          <!-- End Left Column -->
+        </div>
+
+        <!-- Begin Right Column -->
+        <div class="w3-twothird">
+          <div class="w3-container w3-white w3-margin-bottom">
+            <h2 class="w3-padding-16">
+              <i
+                class="fa fa-institution fa-fw w3-margin-right w3-xxlarge"
+                :class="primaryColor.text"
+              ></i
+              ><b>Presentation Schedule</b>
+            </h2>
+
+            <div class="w3-container">
+              <div v-for="schedule in pages[currentPage - 1]">
+                <h4>{{ schedule.title }}</h4>
+                <h6 :class="primaryColor.text">
+                  <i
+                    class="fa fa-users fa-fw w3-margin-right w3-large"
+                    :class="primaryColor.text"
+                  ></i
+                  ><b> {{ schedule.presenter }}</b>
+                </h6>
+                <h6 :class="primaryColor.text">
+                  <i
+                    class="fa fa-calendar fa-fw w3-margin-right w3-large"
+                    :class="primaryColor.text"
+                  ></i
+                  >{{ schedule.date }}
+                  <!-- Manually add margin-left: 4px due to vue.js framework bugs -->
+                  <span
+                    v-for="link in schedule.links"
+                    class="w3-tag w3-round"
+                    :class="primaryColor.bg"
+                    style="margin-left: 4px"
+                    ><a :href="link.url" style="text-decoration: none"
+                      >{{ link.title }}</a
+                    ></span
+                  >
+                </h6>
+                <hr />
+              </div>
+            </div>
+
+            <!-- Pagination Bar -->
+            <div class="w3-container w3-center w3-margin-bottom">
+              <div class="w3-show-inline-block">
+                <div class="w3-bar w3-border w3-round">
+                  <a
+                    class="w3-button"
+                    :class="[currentPage === 1 ? 'w3-disabled' : '', accentColor.hover]"
+                    :disabled="currentPage === 1"
+                    @click="() => { if (currentPage !== 1) currentPage -= 1 }"
+                    >&#10094;
+                  </a>
+                  <a
+                    v-for="pagi in renderPagination(currentPage, totalPage)"
+                    class="w3-button"
+                    :class="[pagi === currentPage ? primaryColor.bg : 'w3-white', pagi === '...' ? 'w3-disabled' : '', pagi === currentPage ? primaryColor.hover : accentColor.hover]"
+                    :disabled="pagi === '...'"
+                    @click="() => { if (pagi !== '...') currentPage = pagi }"
+                  >
+                    {{ pagi }}
+                  </a>
+                  <a
+                    class="w3-button"
+                    :class="[currentPage === totalPage ? 'w3-disabled' : '', accentColor.hover]"
+                    :disabled="currentPage === totalPage"
+                    @click="() => { if (currentPage !== totalPage) currentPage += 1 }"
+                    >&#10095;
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -102,12 +158,11 @@
       <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-      <p>Welcome to ESRG.</p>
-    </footer>
+    <!-- Footer -->
+    <div class="w3-container w3-margin-top w3-center" :class="primaryColor.bg">
+      <p>{{ global.footer }}</p>
+    </div>
+  </body>
 
-</body>
-
-<script src="/js/app.js"></script>
-
+  <script src="/static/app.js"></script>
 </html>
