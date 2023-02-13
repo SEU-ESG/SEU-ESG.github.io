@@ -56,6 +56,14 @@ function renderPagination(currentPage, totalPage) {
   return pagination
 }
 
+function renderUpcoming(schedules) {
+  const upcomings = []
+  for (const schedule of schedules) {
+    upcomings.push(schedule)
+    return upcomings
+  }
+}
+
 function factoryW3Colors(color) {
   return {
     text: 'w3-text-' + color,
@@ -70,13 +78,14 @@ fetch(CONFIG_URL)
   .then((data) => {
     const config = yaml.load(data)
     const pages = slicePages(config.schedules, config.layout.schedulesPerPage)
+    const upcomings = renderUpcoming(config.schedules)
     const app = createApp({
       data() {
         return {
           pages: pages,
           currentPage: 1,
           totalPage: pages.length,
-          upcomings: config.upcomings,
+          upcomings: upcomings,
           links: config.links,
           primaryColor: factoryW3Colors(config.layout.primaryColor),
           accentColor: factoryW3Colors(config.layout.accentColor),

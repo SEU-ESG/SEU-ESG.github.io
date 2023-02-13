@@ -11,6 +11,7 @@
   />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.prod.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+  
   <link rel="stylesheet" href="/static/style.css" />
 
   <body class="w3-light-grey" id="app">
@@ -43,7 +44,9 @@
                 class="w3-panel w3-leftbar"
                 :class="[primaryColor.border, accentColor.bg]"
               >
-                <p>{{ upcoming }}</p>
+                <p>
+                  {{ upcoming.presenter }} will present a/an {{ upcoming.conf }} paper on {{ upcoming.date }} at 7:00 p.m. (GMT+8).
+                </p>
               </div>
             </div>
             <br />
