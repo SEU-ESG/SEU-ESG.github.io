@@ -1,5 +1,6 @@
 schedules:
   - title: "[ATC'22] Soter: Guarding Black-box Inference for General Neural Networks at the Edge"
+    conf: "ATC'22"
     presenter: Ye Wan
     date: Feb 13, 2023.
     links:
@@ -8,6 +9,7 @@ schedules:
       - title: Slides
         url:
   - title: "[OSDI'22] Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference"
+    conf: "OSDI'22"
     presenter: Mengyang Liu
     date: Feb 7, 2023.
     links:
@@ -17,6 +19,7 @@ schedules:
         url: /slides/REEF.pdf
 
   - title: "[ATC'22] Tetris: Memory-efficient Serverless Inference through Tensor Sharing"
+    conf: "ATC'22"
     presenter: Haodong Tian
     date: Jan 30, 2023.
     links:
@@ -26,6 +29,7 @@ schedules:
         url: /slides/Tetris.pdf
 
   - title: "[ATC'22] Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing"
+    conf: "ATC'22"
     presenter: Chenyu Lu
     date: Jan 16, 2023.
     links:
@@ -35,6 +39,7 @@ schedules:
         url: /slides/Gpulet.pdf
 
   - title: "[ATC'22] Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training"
+    conf: "ATC'22"
     presenter: Guangtong Li
     date: Jan 9, 2023.
     links:
@@ -44,6 +49,7 @@ schedules:
         url: /slides/Campo.pdf
 
   - title: "[MobiSys'22] Melon: Breaking the Memory Wall for Resource-Efficient On-Device Machine Learning"
+    conf: "MobiSys'22"
     presenter: Ye Wan
     date: December 26, 2022.
     links:
@@ -54,6 +60,7 @@ schedules:
 
 
   - title: "[MobiCom'22] Romou: rapidly generate high-performance tensor kernels for mobile GPUs"
+    conf: "MobiCom'22"
     presenter: Mengyang Liu
     date: December 19, 2022.
     links:
@@ -63,6 +70,7 @@ schedules:
         url: /slides/Romou.pdf
 
   - title: "[MobiCom'22] Real-time neural network inference on extremely weak devices: agile offloading with explainable AI"
+    conf: "MobiCom'22"
     presenter: Chenyu Lu
     date: December 5, 2022.
     links:
@@ -72,6 +80,7 @@ schedules:
         url: /slides/AgileNN.pdf
 
   - title: "[MobiSys'22] Band: coordinated multi-DNN inference on heterogeneous mobile processors"
+    conf: "MobiSys'22"
     presenter: Guangtong Li
     date: November 28, 2022.
     links:
@@ -81,6 +90,7 @@ schedules:
         url: /slides/BAND.pdf
 
   - title: "[MobiSys'22] CoDL: Efficient CPU-GPU Co-Execution for Deep Learning Inference on Mobile Devices"
+    conf: "MobiSys'22"
     presenter: Ye Wan
     date: November 21, 2022.
     links:
@@ -90,6 +100,7 @@ schedules:
         url: /slides/CoDL.pdf
 
   - title: "[MobiSys'21] nn-Meter: Towards Accurate Latency Prediction of Deep-Learning Model Inference on Diverse Edge Devices"
+    conf: "MobiSys'21"
     presenter: Mengyang Liu
     date: November 14, 2022.
     links:
