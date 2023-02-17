@@ -7,7 +7,7 @@ schedules:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/XamoSoFq9K08
       - title: Slides
-        url:
+        url: /slides/SOTER.pdf
   - title: "[OSDI'22] Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference"
     conf: "OSDI'22"
     presenter: Mengyang Liu
