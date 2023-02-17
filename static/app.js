@@ -21,10 +21,10 @@ function slicePages(schedules, perPage) {
 
 function renderPagination(currentPage, totalPage) {
   const pagination = []
-  let startPage = currentPage - 2
-  let endPage = currentPage + 2
+  let startPage = currentPage
+  let endPage = currentPage + 1
   if (startPage <= 0) {
-    endPage -= (startPage - 1)
+    endPage -= startPage - 1
     startPage = 1
   }
   if (endPage > totalPage) {
@@ -32,7 +32,10 @@ function renderPagination(currentPage, totalPage) {
   }
   if (startPage > 1) {
     pagination.push(1)
-    if (startPage > 2) {
+    if (startPage == 2) {}
+    else if (startPage == 3) {
+      pagination.push(2)
+    } else {
       pagination.push('...')
     }
   }
@@ -40,12 +43,34 @@ function renderPagination(currentPage, totalPage) {
     pagination.push(i)
   }
   if (endPage < totalPage) {
-    if (endPage < totalPage - 1) {
+    if (endPage == totalPage - 1) {
+      pagination.push(totalPage)
+    } else if (endPage == totalPage - 2) {
+      pagination.push(totalPage - 1)
+      pagination.push(totalPage)
+    } else {
       pagination.push('...')
+      pagination.push(totalPage)
     }
-    pagination.push(totalPage)
   }
   return pagination
+}
+
+function renderUpcoming(schedules) {
+  const upcomings = []
+  for (const schedule of schedules) {
+    upcomings.push(schedule)
+    return upcomings
+  }
+}
+
+function factoryW3Colors(color) {
+  return {
+    text: 'w3-text-' + color,
+    bg: 'w3-' + color,
+    border: 'w3-border-' + color,
+    hover: 'w3-hover-' + color,
+  }
 }
 
 fetch(CONFIG_URL)
@@ -53,19 +78,23 @@ fetch(CONFIG_URL)
   .then((data) => {
     const config = yaml.load(data)
     const pages = slicePages(config.schedules, config.layout.schedulesPerPage)
+    const upcomings = renderUpcoming(config.schedules)
     const app = createApp({
       data() {
         return {
           pages: pages,
           currentPage: 1,
           totalPage: pages.length,
-          upcomings: config.upcomings,
+          upcomings: upcomings,
           links: config.links,
+          primaryColor: factoryW3Colors(config.layout.primaryColor),
+          accentColor: factoryW3Colors(config.layout.accentColor),
+          global: config.global,
         }
       },
       methods: {
         renderPagination: renderPagination,
-      }
+      },
     })
     app.mount('#app')
   })
