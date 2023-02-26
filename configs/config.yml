@@ -1,4 +1,13 @@
 schedules:
+  - title: "[SenSys'22] BlastNet: Exploiting Duo-Blocks for Cross-Processor Real-Time DNN Inference"
+    conf: "SenSys'22"
+    presenter: Chenyu Lu
+    date: Feb 27, 2023.
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/m37eOiuvurKe
+      - title: Slides
+        url: /slides/BlastNet.pdf
   - title: "[ATC'22] Cachew: Machine Learning Input Data Processing as a Service"
     conf: "ATC'22"
     presenter: Guangtong Li
