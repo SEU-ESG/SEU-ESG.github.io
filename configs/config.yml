@@ -6,8 +6,8 @@ schedules:
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/gF9Ft3uO69PR
-      #- title: Slides
-      #  url: /slides/TLP.pdf
+      - title: Slides
+        url: /slides/TLP.pdf
   - title: "[SenSys'22] BlastNet: Exploiting Duo-Blocks for Cross-Processor Real-Time DNN Inference"
     conf: "SenSys'22"
     presenter: Chenyu Lu
