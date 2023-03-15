@@ -6,6 +6,8 @@ schedules:
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/zqo5C6KTLUDi
+      - title: Slides
+        url: /slides/ROLLER.pdf
 
   - title: "[ASPLOS'23] TLP: A Deep Learning-Based Cost Model for Tensor Program Tuning"
     conf: "ASPLOS'23"
