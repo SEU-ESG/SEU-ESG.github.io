@@ -7,7 +7,7 @@ schedules:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/yNGi2Nxl94go
       - title: Slides
-        url: /slides/AStitich.pdf
+        url: /slides/AStitch.pdf
   - title: "[Sensys'22] Hyperion: A Generic and Distributed Mobile Offloading Framework on OpenCL"
     conf: "Sensys'22"
     presenter: Ye Wan
