@@ -1,7 +1,7 @@
 schedules:
   - title: "[NSDI'23] ModelKeeper: Accelerating DNN Training via Automated Training Warmup"
     conf: "NSDI'23"
-    presneter: Chenyu Lu
+    presenter: Chenyu Lu
     date: Apr 13, 2023.
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/6fPisSgvNOXv
