@@ -1,4 +1,12 @@
 schedules:
+  - title: "[NSDI'23] ModelKeeper: Accelerating DNN Training via Automated Training Warmup"
+    conf: "NSDI'23"
+    presneter: Chenyu Lu
+    date: Apr 13, 2023.
+      - title: TecentMeeting
+        url: https://meeting.tencent.com/dm/6fPisSgvNOXv
+      - title: Slides
+        url: /slides/ModelKeeper.pdf
   - title: "[ASPLOS'22] AStitch: Enabling a New Multi-dimensional Optimization Space for Memory-Intensive ML Training and Inference on Modern SIMT Architectures"
     conf: "ASPLOS'22"
     presenter: Guangtong Li
