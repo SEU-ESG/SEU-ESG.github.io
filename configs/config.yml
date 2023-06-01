@@ -1,4 +1,13 @@
 schedules:
+  - title: "[ASPLOS'23] BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution"
+    conf: "ASPLOS'23"
+    presenter: Haodong Tian
+    date: June 1, 2023.
+    links:
+      - title: TecentMeeting
+        url: https://meeting.tencent.com/dm/GIZlZUew5kj5
+      - title: Slides
+        url: /slides/BeeHive.pdf
   - title: "[MobiSys'23] Understanding and Optimizing Deep Learning Cold-Start Latency on Edge Devices"
     conf: "MobiSys'23"
     presenter: Mengyang Liu
