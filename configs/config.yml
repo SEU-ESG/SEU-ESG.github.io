@@ -7,7 +7,7 @@ schedules:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/GIZlZUew5kj5
       - title: Slides
-        url: /slides/Convrelu++.pdf
+        url: /slides/ConvRelu++.pdf
   - title: "[ASPLOS'23] BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution"
     conf: "ASPLOS'23"
     presenter: Haodong Tian
