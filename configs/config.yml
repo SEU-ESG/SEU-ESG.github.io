@@ -1,4 +1,13 @@
 schedules:
+  - title: "[Mobisys'23] ConvReLU++: Reference-based Lossless Acceleration of Conv-ReLU Operations on Mobile CPU"
+    conf: "Mobisys'23"
+    presenter: Ye Wan
+    date: June 8, 2023.
+    links:
+      - title: TecentMeeting
+        url: https://meeting.tencent.com/dm/GIZlZUew5kj5
+      - title: Slides
+        url: /slides/ConvRelu++.pdf
   - title: "[ASPLOS'23] BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution"
     conf: "ASPLOS'23"
     presenter: Haodong Tian
