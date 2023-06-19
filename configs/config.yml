@@ -1,4 +1,13 @@
 schedules:
+  - title: "[ASPLOS'22] INFless: A Native Serverless System for Low-Latency, High-Throughput Inference"
+    conf: "ASPLOS'22"
+    presenter: Guangtong Li
+    date: June 15, 2023.
+    links:
+      - title: TecentMeeting
+        url: https://meeting.tencent.com/dm/tcI8MDYCn5zO
+      - title: Slides
+        url: /slides/INFless.pdf
   - title: "[Mobisys'23] ConvReLU++: Reference-based Lossless Acceleration of Conv-ReLU Operations on Mobile CPU"
     conf: "Mobisys'23"
     presenter: Ye Wan
