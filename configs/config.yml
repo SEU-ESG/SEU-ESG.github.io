@@ -228,10 +228,6 @@ links:
     url: https://jhagyscvrs.feishu.cn/sheets/shtcnXvN4tNwKVLO9K3dt2QgBae?sheet=18ce4c
     icon: fa-paperclip
 
-  - title: Guide is here.
-    url: /files/Guidance.pdf
-    icon: fa-compass
-
   - title: How to contribute to this website?
     url: https://github.com/SEU-ESG/SEU-ESG.github.io/blob/master/How-To-Update.md
     icon: fa-github
