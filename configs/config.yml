@@ -1,4 +1,11 @@
 schedules:
+  - title: "[MobiCom'23] LUT-NN: Empower Efficient Neural Network Inference with Centroid Learning and Table Lookup"
+    conf: "MobiCom'23"
+    presenter: Mengyang Liu
+    date: Oct 10, 2023.
+    links:
+      - title: Slides
+        url: /slides/LUT-NN.pdf
   - title: "[ASPLOS'23] AQUATOPE: QoS-and-Uncertainty-Aware Resource Management for Multi-stage Serverless Workflows"
     conf: "ASPLOS'23"
     presenter: Haodong Tian
