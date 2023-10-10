@@ -3,6 +3,7 @@ schedules:
     conf: "MobiCom'23"
     presenter: Mengyang Liu
     date: Oct 10, 2023.
+    location: Room CS413 @ SEU
     links:
       - title: Slides
         url: /slides/LUT-NN.pdf
@@ -10,6 +11,7 @@ schedules:
     conf: "ASPLOS'23"
     presenter: Haodong Tian
     date: Sep 26, 2023.
+    location: Room CS413 @ SEU
     links:
       - title: Slides
         url: /slides/AQUATOPE.pdf
@@ -17,6 +19,7 @@ schedules:
     conf: "Mobisys'23"
     presenter: Chenyu Lu
     date: June 29, 2023.
+    location: Room CS313 @ SEU & Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/kBz2Zw9Ne8sx
@@ -26,6 +29,7 @@ schedules:
     conf: "ASPLOS'22"
     presenter: Guangtong Li
     date: June 15, 2023.
+    location: Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/tcI8MDYCn5zO
@@ -35,6 +39,7 @@ schedules:
     conf: "Mobisys'23"
     presenter: Ye Wan
     date: June 8, 2023.
+    location: Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/GIZlZUew5kj5
@@ -44,6 +49,7 @@ schedules:
     conf: "ASPLOS'23"
     presenter: Haodong Tian
     date: June 1, 2023.
+    location: Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/GIZlZUew5kj5
@@ -53,6 +59,7 @@ schedules:
     conf: "MobiSys'23"
     presenter: Mengyang Liu
     date: May 25, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/vtnLMBunSfXU
@@ -62,6 +69,7 @@ schedules:
     conf: "NSDI'23"
     presenter: Chenyu Lu
     date: Apr 13, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TecentMeeting
         url: https://meeting.tencent.com/dm/6fPisSgvNOXv
@@ -71,6 +79,7 @@ schedules:
     conf: "ASPLOS'22"
     presenter: Guangtong Li
     date: Mar 30, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/yNGi2Nxl94go
@@ -80,6 +89,7 @@ schedules:
     conf: "Sensys'22"
     presenter: Ye Wan
     date: Mar 23, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/81KneO3hsY4j
@@ -89,6 +99,7 @@ schedules:
     conf: "OSDI'22"
     presenter: Haodong Tian
     date: Mar 16, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/zqo5C6KTLUDi
@@ -99,6 +110,7 @@ schedules:
     conf: "ASPLOS'23"
     presenter: Mengyang Liu
     date: Mar 9, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/gF9Ft3uO69PR
@@ -108,6 +120,7 @@ schedules:
     conf: "SenSys'22"
     presenter: Chenyu Lu
     date: Feb 27, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/m37eOiuvurKe
@@ -117,6 +130,7 @@ schedules:
     conf: "ATC'22"
     presenter: Guangtong Li
     date: Feb 20, 2023.
+    location: Room CS364 @ SEU & Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/VMAxl6WX5SDt
@@ -126,6 +140,7 @@ schedules:
     conf: "ATC'22"
     presenter: Ye Wan
     date: Feb 13, 2023.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/XamoSoFq9K08
@@ -135,6 +150,7 @@ schedules:
     conf: "OSDI'22"
     presenter: Mengyang Liu
     date: Feb 7, 2023.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/oL97GlMJEADM
@@ -145,6 +161,7 @@ schedules:
     conf: "ATC'22"
     presenter: Haodong Tian
     date: Jan 30, 2023.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/rYCLuoA7EVSf
@@ -155,6 +172,7 @@ schedules:
     conf: "ATC'22"
     presenter: Chenyu Lu
     date: Jan 16, 2023.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/QItk9sCtnRMl
@@ -165,6 +183,7 @@ schedules:
     conf: "ATC'22"
     presenter: Guangtong Li
     date: Jan 9, 2023.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/3wejGnobNOHR
@@ -175,6 +194,7 @@ schedules:
     conf: "MobiSys'22"
     presenter: Ye Wan
     date: December 26, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/BkcWtYkIeqC3
@@ -186,6 +206,7 @@ schedules:
     conf: "MobiCom'22"
     presenter: Mengyang Liu
     date: December 19, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/uS6xPdn9NzCi
@@ -196,6 +217,7 @@ schedules:
     conf: "MobiCom'22"
     presenter: Chenyu Lu
     date: December 5, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/1BKlQNoChOlt
@@ -206,6 +228,7 @@ schedules:
     conf: "MobiSys'22"
     presenter: Guangtong Li
     date: November 28, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/TUIsg858C5VV
@@ -216,6 +239,7 @@ schedules:
     conf: "MobiSys'22"
     presenter: Ye Wan
     date: November 21, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/ZMCR9ItoDoFt
@@ -226,6 +250,7 @@ schedules:
     conf: "MobiSys'21"
     presenter: Mengyang Liu
     date: November 14, 2022.
+    location: Online
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/6r5oKfu8QCZO
