@@ -2,8 +2,8 @@ schedules:
   - title: "[MobiCom'23] LUT-NN: Empower Efficient Neural Network Inference with Centroid Learning and Table Lookup"
     conf: "MobiCom'23"
     presenter: Mengyang Liu
-    date: Oct 10, 2023.
-    location: Room CS413 @ SEU
+    date: Oct 15, 2023.
+    location: Room CS364 @ SEU
     links:
       - title: Slides
         url: /slides/LUT-NN.pdf
