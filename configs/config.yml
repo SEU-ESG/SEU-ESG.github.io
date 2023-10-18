@@ -1,4 +1,12 @@
 schedules:
+  - title: "[Mobisys'23] NN-Stretch: Automatic Neural Network Branching for Parallel Inference on Heterogeneous Multi-Processors"
+    conf: "Mobisys'23"
+    presenter: Ye Wan
+    date: Oct 17, 2023.
+    location: Room CS413 @ SEU
+    links:
+      - title: Slides
+        url: /slides/NN-Stretch.pdf
   - title: "[MobiCom'23] LUT-NN: Empower Efficient Neural Network Inference with Centroid Learning and Table Lookup"
     conf: "MobiCom'23"
     presenter: Mengyang Liu
