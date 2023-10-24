@@ -1,4 +1,12 @@
 schedules:
+  - title: "[CVPR'23] DepGraph: Towards Any Structural Pruning"
+    conf: "CVPR'23"
+    presenter: Guangtong Li
+    date: Oct 24, 2023.
+    location: Room CS413 @ SEU
+    links:
+      - title: Slides
+        url: /slides/DepGraph.pdf
   - title: "[Mobisys'23] NN-Stretch: Automatic Neural Network Branching for Parallel Inference on Heterogeneous Multi-Processors"
     conf: "Mobisys'23"
     presenter: Ye Wan
