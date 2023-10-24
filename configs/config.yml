@@ -3,7 +3,7 @@ schedules:
     conf: "CVPR'23"
     presenter: Guangtong Li
     date: Oct 24, 2023.
-    location: Room CS413 @ SEU
+    location: Room CS313 @ SEU
     links:
       - title: Slides
         url: /slides/DepGraph.pdf
