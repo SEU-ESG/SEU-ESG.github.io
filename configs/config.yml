@@ -1,4 +1,12 @@
 schedules:
+  - title: "[Mobicom'23] Cost-effective On-device Continual Learning over Memory Hierarchy with Miro"
+    conf: "Mobicom'23"
+    presenter: Chenyu Lu
+    date: Oct 31, 2023.
+    location: Room CS313 @ SEU
+    links:
+      - title: Slides
+        url: /slides/miro.pdf
   - title: "[CVPR'23] DepGraph: Towards Any Structural Pruning"
     conf: "CVPR'23"
     presenter: Guangtong Li
