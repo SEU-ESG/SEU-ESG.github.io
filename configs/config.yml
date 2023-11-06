@@ -1,5 +1,5 @@
 schedules:
-    - title: "[SoCC'23] Golgi: Performance-Aware, Resource-Efficient Function Scheduling for Serverless Computing"
+  - title: "[SoCC'23] Golgi: Performance-Aware, Resource-Efficient Function Scheduling for Serverless Computing"
     conf: "SoCC'23"
     presenter: Haodong Tian
     date: Nov 6, 2023.
