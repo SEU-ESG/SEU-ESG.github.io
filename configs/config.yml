@@ -7,7 +7,7 @@ schedules:
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/BG1i94P42jlG
-        title: Slides
+      - title: Slides
         url: https://seunic-my.sharepoint.cn/:p:/g/personal/213211315_seu_edu_cn/ESmejV-0yrZPitd7ExUvVm0BgCBX9dOAb7Nxv-D7F1su2A?e=y1tWbq
   - title: "[Mobicom'23] Cost-effective On-device Continual Learning over Memory Hierarchy with Miro"
     conf: "Mobicom'23"
