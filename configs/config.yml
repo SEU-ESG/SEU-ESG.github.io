@@ -9,7 +9,7 @@ schedules:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/Jus5fyooCImk
       - title: Slides
-        url: 
+        url: /slides/SpaceEvo.pdf
         
   - title: "[ASPLOS'24] Amanda: Unified Instrumentation Framework for Deep Neural Networks"
     conf: "ASPLOS'24"
