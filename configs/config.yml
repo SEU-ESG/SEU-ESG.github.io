@@ -1,4 +1,15 @@
 schedules:
+  - title: "[MLSys'22] Bolt: Bridging the Gap between Auto-tuners and Hardware-native Performance"
+    conf: "MLSys'22"
+    presenter: Guangtong Li
+    date: Nov 27, 2023.
+    time: 1:30 p.m.
+    location: Room CS413 @ SEU & Online
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/uJ0tczyl7dDs
+      - title: Slides
+        url: /slides/Bolt.pdf
   - title: "[ICCV'23] SpaceEvo: Hardware-Friendly Search Space Design for Efficient INT8 Inference"
     conf: "ICCV'23"
     presenter: Ye Wan
