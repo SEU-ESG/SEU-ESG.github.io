@@ -1,4 +1,15 @@
 schedules:
+  - title: "[SoCC'23] Maximizing the Utilization of GPUs Used by Cloud Gaming through Adaptive Co-location with Combo"
+    conf: "SoCC'23"
+    presenter: Chenyu Lu
+    date: Dec 04, 2023.
+    time: 1:30 p.m.
+    location: Room CS413 @ SEU & Online
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/nLSQZtiSnUtD
+      - title: Slides
+        url: /slides/Combo.pdf
   - title: "[MLSys'22] Bolt: Bridging the Gap between Auto-tuners and Hardware-native Performance"
     conf: "MLSys'22"
     presenter: Guangtong Li
