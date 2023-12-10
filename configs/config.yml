@@ -1,4 +1,15 @@
 schedules:
+  - title: "[TPDS'22] Astrea: Auto-Serverless Analytics Towards Cost-Efficiency and QoS-Awareness"
+    conf: "TPDS'22"
+    presenter: Haodong Tian
+    date: Dec 11, 2023.
+    time: 1:30 p.m.
+    location: Room CS413 @ SEU & Online
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/2gWGpIle5wj1
+      - title: Slides
+        url: https://seunic-my.sharepoint.cn/:p:/g/personal/213211315_seu_edu_cn/EbE_r4hcriZEn6EfYBz2ZtkBNB0HWAcI-a9JjzeFsEftAQ?e=HxL5Yk
   - title: "[SoCC'23] Maximizing the Utilization of GPUs Used by Cloud Gaming through Adaptive Co-location with Combo"
     conf: "SoCC'23"
     presenter: Chenyu Lu
