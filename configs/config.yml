@@ -1,10 +1,21 @@
 schedules:
+  - title: "[TPDS'22] Liquid: Intelligent Resource Estimation and Network-Efficient Scheduling for Deep Learning Jobs on Distributed GPU Clusters"
+    conf: "TPDS'22"
+    presenter: Haodong Tian
+    date: Dec 18, 2023.
+    time: 1:30 p.m.
+    location: Room CS413 @ SEU & Online
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/2gWGpIle5wj1
+      - title: Slides
+        url: /slides/Liquid.pdf
   - title: "[TPDS'22] Astrea: Auto-Serverless Analytics Towards Cost-Efficiency and QoS-Awareness"
     conf: "TPDS'22"
     presenter: Haodong Tian
     date: Dec 11, 2023.
     time: 1:30 p.m.
-    location: Room CS413 @ SEU & Online
+    location: Cancelled
     links:
       - title: TencentMeeting
         url: https://meeting.tencent.com/dm/2gWGpIle5wj1
