@@ -2,7 +2,7 @@ schedules:
   - title: "[Micro'23] PockEngine: Sparse and Efficient Fine-tuning in a Pocket"
     conf: "Micro'23"
     presenter: Mengyang Liu
-    date: Mar 27, 2024.
+    date: Mar 29, 2024.
     time: 2:00 p.m.
     location: Room CS119 @ SEU & Online
     links:
