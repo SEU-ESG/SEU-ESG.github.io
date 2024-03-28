@@ -1,0 +1,15 @@
+{
+  "name": "seu-esg.github.io",
+  "version": "1.0.0",
+  "description": "The website of Edge System Group @ SEU",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "js-yaml": "^4.1.0"
+  }
+}
