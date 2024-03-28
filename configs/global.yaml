@@ -1,0 +1,15 @@
+links:
+  - title: Paper Pool is here.
+    url: https://jhagyscvrs.feishu.cn/sheets/shtcnXvN4tNwKVLO9K3dt2QgBae?sheet=18ce4c
+
+  - title: How to contribute to this website?
+    url: https://github.com/SEU-ESG/SEU-ESG.github.io/blob/master/How-To-Update.md
+
+  - title: Upload a new schedule.
+    url: https://github.com/SEU-ESG/SEU-ESG.github.io/edit/master/configs/schedules.yml
+
+layout:
+  schedulesPerPage: 5
+
+header: Edge System Reading Group @ SEU
+footer: 2024 SEU-ESG. Powered by Jekyll and GitHub Pages.
