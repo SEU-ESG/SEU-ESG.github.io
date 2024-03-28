@@ -1,4 +1,15 @@
 schedules:
+  - title: "[Micro'23] PockEngine: Sparse and Efficient Fine-tuning in a Pocket"
+    conf: "Micro'23"
+    presenter: Mengyang Liu
+    date: Mar 29, 2024.
+    time: 2:00 p.m.
+    location: Room CS119 @ SEU & Online
+    links:
+      - title: TencentMeeting
+        url: https://meeting.tencent.com/dm/cdhBgkQyD2E6
+      - title: Slides
+        url: /slides/PockEngine.pdf
   - title: "[TPDS'22] Liquid: Intelligent Resource Estimation and Network-Efficient Scheduling for Deep Learning Jobs on Distributed GPU Clusters"
     conf: "TPDS'22"
     presenter: Haodong Tian
