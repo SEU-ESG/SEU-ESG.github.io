@@ -2,37 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
         <%= global.header %>
     </title>
-    <link rel="icon" type="image/png" href="/seu-esg.png">
+    <link rel="icon" type="image/png" href="/seu-esg.png" />
     <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 </head>
 
 <body>
-
     <!-- Semantic UI Container -->
     <div class="ui container">
-
         <!-- Page Header -->
         <div class="ui large text menu">
             <div class="item">
-                <img src="/seu.png">
+                <img src="/seu.png" />
             </div>
-            <div class="item">
+            <a class="item">
                 <h2 class="ui header">
                     <%= global.header %>
                 </h2>
-            </div>
+            </a>
         </div>
 
         <!-- Page Grid -->
-        <div class="ui grid">
+        <div class="ui stackable grid">
             <!-- Sidebar Widgets Column -->
             <div class="four wide column">
                 <!-- Upcoming Widget -->
@@ -60,7 +58,7 @@
                 <div class="ui bottom attached segment">
                     <div class="content">
                         <div class="ui fluid icon input">
-                            <input type="text" placeholder="Conf / Title / Presenter ..." id="search-input">
+                            <input type="text" placeholder="Conf / Title / Presenter" id="search-input" />
                             <i class="search icon"></i>
                         </div>
                     </div>
@@ -95,17 +93,12 @@
                     </div>
                 </h4>
                 <div class="ui attached segment">
-                    <div class="content" id="schedule-container">
-                    </div>
+                    <div class="content" id="schedule-container"></div>
                 </div>
                 <div class="ui bottom attached segment">
                     <div class="ui center aligned container">
-                        <div class="ui tiny pagination menu" id="pagination">
-
-                        </div>
+                        <div class="ui tiny pagination menu" id="pagination"></div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -119,68 +112,87 @@
             </div>
         </div>
     </div>
-
 </body>
 
-<!-- const schedules = ... (from ejs parameters) -->
-
-<span id="schedules" data="<%= JSON.stringify(schedules) %>"></span>
-<span id="schedules-per-page" data="<%= JSON.stringify(global.layout.schedulesPerPage) %>"></span>
 <script>
-    const schedules = JSON.parse($('#schedules').attr('data'));
-    const schedulesPerPage = parseInt($('#schedules-per-page').attr('data'));
-    let currentPage = 1;
-    let totalPage = Math.ceil(schedules.length / schedulesPerPage);
-    let filteredSchedules = schedules;
+    const schedules = <%- JSON.stringify(schedules) %>
+    const schedulesPerPage = <%- global.layout.schedulesPerPage %>
+</script>
+
+<script>
+    let currentPage = 1
+    let totalPage = Math.ceil(schedules.length / schedulesPerPage)
+    let filteredSchedules = schedules
+    const labelColors = ['red', 'orange', 'yellow', 'olive', 'green', 'teal', 'blue', 'violet', 'purple', 'pink', 'brown']
+
+    function hash(conf) {
+        conf = conf.toLowerCase()
+        let hash = 0
+        for (let i = 0; i < conf.length; i++) {
+            hash = (hash << 5) - hash + conf.charCodeAt(i)
+            hash = hash & hash
+        }
+        return Math.abs(hash)
+    }
+
+    function includesIgnoreCase(str, keyword) {
+        return str.toLowerCase().includes(keyword.toLowerCase())
+    }
+
 
     function filterSchedules(keyword) {
-        return schedules.filter(schedule => {
-            return schedule.title.includes(keyword) || schedule.conf.includes(keyword) || schedule.presenter.includes(keyword)
-        });
+        return schedules.filter((schedule) => (
+            includesIgnoreCase(schedule.title, keyword) ||
+            includesIgnoreCase(schedule.conf, keyword) ||
+            includesIgnoreCase(schedule.presenter, keyword)
+        ))
     }
 
     function sliceSchedules(schedules, page) {
-        const start = (page - 1) * schedulesPerPage;
-        const end = start + schedulesPerPage;
-        return schedules.slice(start, end);
+        const start = (page - 1) * schedulesPerPage
+        const end = start + schedulesPerPage
+        return schedules.slice(start, end)
     }
 
     function renderPagination(currentPage, totalPage) {
-        const container = $('#pagination')[0];
-        container.innerHTML = '';
+        const container = $('#pagination')[0]
+        container.innerHTML = ''
         {
-            const prev = document.createElement('a');
-            prev.className = `icon item ${currentPage === 1 ? 'disabled' : ''}`;
-            prev.innerHTML = '<i class="left chevron icon"></i>';
-            container.appendChild(prev);
+            const prev = document.createElement('a')
+            prev.className = `icon item ${currentPage === 1 ? 'disabled' : ''}`
+            prev.innerHTML = '<i class="left chevron icon"></i>'
+            container.appendChild(prev)
         }
         for (let i = 1; i <= totalPage; i++) {
-            const page = document.createElement('a');
-            page.className = i === currentPage ? 'active item' : 'item';
-            page.innerHTML = i;
-            container.appendChild(page);
+            const page = document.createElement('a')
+            page.className = i === currentPage ? 'active item' : 'item'
+            page.innerHTML = i
+            container.appendChild(page)
         }
         {
-            const next = document.createElement('a');
-            next.className = `icon item ${currentPage === totalPage ? 'disabled' : ''}`;
-            next.innerHTML = '<i class="right chevron icon"></i>';
-            container.appendChild(next);
+            const next = document.createElement('a')
+            next.className = `icon item ${currentPage === totalPage ? 'disabled' : ''
+                }`
+            next.innerHTML = '<i class="right chevron icon"></i>'
+            container.appendChild(next)
         }
-
     }
 
     function renderSchedules(schedules) {
-        const container = $('#schedule-container')[0];
-        container.innerHTML = '';
-        schedules.forEach(schedule => {
-            const div = document.createElement('div');
-            const linksHTML = schedule.links.map(link => `<a href="${link.url}">${link.title}</a>`).join(' | ');
+        const container = $('#schedule-container')[0]
+        container.innerHTML = ''
+        schedules.forEach((schedule) => {
+            const div = document.createElement('div')
+            const linksHTML = schedule.links
+                .map((link) => `<a href="${link.url}">${link.title}</a>`)
+                .join(' | ')
 
-            div.className = 'ui vertical segment';
+            div.className = 'ui vertical segment'
             div.innerHTML = `
-                <a class="ui teal ribbon label">${schedule.conf}</a>
-                <h5 style="display: inline">${schedule.title}</h5>
-                <div class="ui bulleted list">
+                <h4><a class="ui ${labelColors[hash(schedule.conf) % labelColors.length]} ribbon label">
+                    ${schedule.conf}
+                </a>${schedule.title}</h4>
+                <div class="ui list">
                     <div class="item">
                         <span class="description">
                             <i class="user icon"></i>
@@ -196,7 +208,7 @@
                     <div class="item">
                         <span class="description">
                             <i class="clock icon"></i>
-                            ${schedule.date} ${schedule.time}
+                            ${schedule.time} ${schedule.date}
                         </span>
                     </div>
                     <div class="item">
@@ -206,46 +218,49 @@
                         </span>
                     </div>
                 </div>
-            `;
-            container.appendChild(div);
-        });
+            `
+            container.appendChild(div)
+        })
     }
-
 
     $(document).ready(() => {
         renderSchedules(sliceSchedules(filteredSchedules, currentPage));
-        renderPagination(currentPage, totalPage);
-    });
+        renderPagination(currentPage, totalPage)
+    })
 
     $('#pagination').on('click', 'a', function () {
         if ($(this).hasClass('disabled')) {
-            return;
+            return
         }
         if ($(this).hasClass('icon')) {
             if ($(this).find('i').hasClass('left')) {
-                currentPage -= 1;
+                currentPage -= 1
             } else {
-                currentPage += 1;
+                currentPage += 1
             }
         } else {
-            currentPage = parseInt($(this).text());
+            currentPage = parseInt($(this).text())
         }
 
-        renderSchedules(sliceSchedules(filteredSchedules, currentPage));
-        renderPagination(currentPage, totalPage);
-    });
+        renderSchedules(sliceSchedules(filteredSchedules, currentPage))
+        renderPagination(currentPage, totalPage)
+    })
 
     $('#search-input').on('input', function () {
-        const keyword = $(this).val();
-        filteredSchedules = filterSchedules(keyword);
+        const keyword = $(this).val()
+        filteredSchedules = filterSchedules(keyword)
 
-        currentPage = 1;
-        totalPage = Math.ceil(filteredSchedules.length / schedulesPerPage);
+        currentPage = 1
+        totalPage = Math.ceil(filteredSchedules.length / schedulesPerPage)
 
-        renderSchedules(sliceSchedules(filteredSchedules, currentPage));
-        renderPagination(currentPage, totalPage);
-    });
+        renderSchedules(sliceSchedules(filteredSchedules, currentPage))
+        renderPagination(currentPage, totalPage)
+    })
 
+    $('#schedule-container').on('click', '.label', function () {
+        $('#search-input').val($(this).text().trim())
+        $('#search-input').trigger('input')
+    })
 </script>
 
 </html>
