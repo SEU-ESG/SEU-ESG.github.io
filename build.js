@@ -1,4 +1,5 @@
 const ejs = require('ejs');
+const minify = require('html-minifier').minify;
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
@@ -12,7 +13,12 @@ latest = schedules[0];
 global.upcoming = `${latest.presenter} will present a/an ${latest.conf} paper on ${latest.time}, ${latest.date} at ${latest.location}.`;
 
 // Render index.ejs
-const index = ejs.render(fs.readFileSync(path.join(__dirname, 'index.ejs'), 'utf8'), { global, schedules });
+const index = minify(ejs.render(fs.readFileSync(path.join(__dirname, 'index.ejs'), 'utf8'), { global, schedules }), {
+  collapseWhitespace: true,
+  removeComments: true,
+  minifyJS: true,
+  minifyCSS: true
+});
 
 // Write the rendered HTML to index.html
 fs.writeFileSync(path.join(__dirname, 'index.html'), index);
