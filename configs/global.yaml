@@ -6,7 +6,7 @@ links:
     url: https://github.com/SEU-ESG/SEU-ESG.github.io/blob/master/How-To-Update.md
 
   - title: Upload a new schedule.
-    url: https://github.com/SEU-ESG/SEU-ESG.github.io/edit/master/configs/schedules.yml
+    url: https://github.com/SEU-ESG/SEU-ESG.github.io/edit/master/configs/schedules.yaml
 
 layout:
   schedulesPerPage: 5
