@@ -1,3 +1,14 @@
+- title: "RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing"
+  conf: "ASPLOS'24"
+  presenter: Haodong Tian
+  date: Apr 19, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/XRwuCpsUWtSL
+    # - title: Slides
+    #   url: /slides/rainbowcake.pdf
 - title: "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training"
   conf: "NSDI'23"
   presenter: Chenyu Lu
