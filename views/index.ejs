@@ -64,6 +64,25 @@
                     </div>
                 </div>
 
+                <!-- Blogs Widget -->
+                <h4 class="ui block top attached header">
+                    <div class="content">
+                        <i class="newspaper icon"></i>
+                        Blogs
+                    </div>
+                </h4>
+                <div class="ui bottom attached segment">
+                    <div class="content">
+                        <div class="ui bulleted list">
+                            <% blogs.forEach(function(blog) { %>
+                                <a class="item" href="/blog.html#<%= blog.id %>">
+                                    <%= blog.title %>
+                                </a>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Useful Links Widget -->
                 <h4 class="ui block top attached header">
                     <div class="content">
@@ -107,7 +126,7 @@
         <div class="ui vertical segment">
             <div class="ui center aligned container">
                 <div class="ui horizontal small divided link list">
-                    2024 SEU-ESG. Powered by Jekyll and GitHub Pages.
+                    <%= global.footer %>
                 </div>
             </div>
         </div>

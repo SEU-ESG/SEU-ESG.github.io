@@ -36,7 +36,7 @@ jobs:
       - name: Render with ejs
         run: npm run build
       - name: Remove build artifacts
-        run: rm -rf node_modules package-lock.json index.ejs .gitignore .github README.md configs
+        run: rm -rf node_modules package-lock.json views .gitignore .github README.md configs
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

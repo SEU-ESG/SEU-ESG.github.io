@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+        <%= global.header %>
+    </title>
+    <link rel="icon" type="image/png" href="/seu-esg.png" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</head>
+
+<body>
+    <!-- Semantic UI Container -->
+    <div class="ui container">
+        <!-- Page Header -->
+        <div class="ui large text menu">
+            <div class="item">
+                <img src="/seu.png" />
+            </div>
+            <a class="item" href="/index.html">
+                <h2 class="ui header">
+                    <%= global.header %>
+                </h2>
+            </a>
+        </div>
+
+        <!-- Page Grid -->
+        <div class="ui stackable grid">
+            <!-- Sidebar Widgets Column -->
+            <div class="four wide column">
+                <!-- Upcoming Widget -->
+                <h4 class="ui block top attached header">
+                    <div class="content">
+                        <i class="bullhorn alternate icon"></i>
+                        Upcoming
+                    </div>
+                </h4>
+                <div class="ui bottom attached segment">
+                    <div class="content">
+                        <div class="description">
+                            <%= global.upcoming %>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blogs Widget -->
+                <h4 class="ui block top attached header">
+                    <div class="content">
+                        <i class="newspaper icon"></i>
+                        Blogs
+                    </div>
+                </h4>
+                <div class="ui bottom attached segment">
+                    <div class="content">
+                        <div class="ui bulleted list">
+                            <% blogs.forEach(function(blog) { %>
+                                <a class="item" href="/blog.html#<%= blog.id %>">
+                                    <%= blog.title %>
+                                </a>
+                            <% }); %>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Useful Links Widget -->
+                <h4 class="ui block top attached header">
+                    <div class="content">
+                        <i class="linkify icon"></i>
+                        Useful Links
+                    </div>
+                </h4>
+                <div class="ui bottom attached segment">
+                    <div class="content">
+                        <div class="ui bulleted list">
+                            <% global.links.forEach(function(link) { %>
+                                <a class="item" href="<%= link.url %>">
+                                    <%= link.title %>
+                                </a>
+                                <% }); %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content Column -->
+            <div class="twelve wide stretched column">
+                <h4 class="ui block top attached header">
+                    <div class="content">
+                        <i class="newspaper icon"></i>
+                        Blogs
+                    </div>
+                </h4>
+                <div class="ui attached segment">
+                    <div class="content" id="blog-container">
+                        <% blogs.forEach(function(blog) { %>
+                            <div class="ui vertical segment">
+                                <h1 id="<%= blog.id %>"><%= blog.title %></h1>
+                                <div class="ui horizontal small divided link list">
+                                    <div class="item">
+                                        <i class="calendar alternate icon"></i>
+                                        <%= blog.date %>
+                                    </div>
+                                    <div class="item">
+                                        <i class="user icon"></i>
+                                        <%= blog.author %>
+                                    </div>
+                                </div>
+                                <%- blog.html %>
+                            </div>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Footer -->
+        <div class="ui vertical segment">
+            <div class="ui center aligned container">
+                <div class="ui horizontal small divided link list">
+                    <%= global.footer %>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
