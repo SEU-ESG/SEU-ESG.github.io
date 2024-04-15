@@ -1,3 +1,14 @@
+- title: "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training"
+  conf: "NSDI'23"
+  presenter: Chenyu Lu
+  date: Apr 12, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/0L7DNrSbZnoW
+    - title: Slides
+      url: /slides/zeus.pdf
 - title: "PockEngine: Sparse and Efficient Fine-tuning in a Pocket"
   conf: "Micro'23"
   presenter: Mengyang Liu
