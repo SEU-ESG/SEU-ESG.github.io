@@ -7,8 +7,8 @@
   links:
     - title: TencentMeeting
       url: https://meeting.tencent.com/dm/XRwuCpsUWtSL
-    # - title: Slides
-    #   url: /slides/rainbowcake.pdf
+    - title: Slides
+      url: /slides/RainbowCake.pdf
 - title: "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training"
   conf: "NSDI'23"
   presenter: Chenyu Lu
@@ -62,8 +62,8 @@
   links:
     - title: TencentMeeting
       url: https://meeting.tencent.com/dm/nLSQZtiSnUtD
-    - title: Slides
-      url: /slides/Combo.pdf
+    # - title: Slides
+    #   url: /slides/Combo.pdf
 - title: "Bolt: Bridging the Gap between Auto-tuners and Hardware-native Performance"
   conf: "MLSys'22"
   presenter: Guangtong Li

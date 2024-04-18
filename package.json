@@ -4,7 +4,8 @@
   "description": "The website of Edge System Group @ SEU",
   "main": "index.js",
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "test": "node test.js"
   },
   "author": "",
   "license": "ISC",
