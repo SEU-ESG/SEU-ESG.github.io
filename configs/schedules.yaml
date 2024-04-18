@@ -8,7 +8,7 @@
     - title: TencentMeeting
       url: https://meeting.tencent.com/dm/XRwuCpsUWtSL
     - title: Slides
-      url: /slides/rainbowcake.pdf
+      url: /slides/RainbowCake.pdf
 - title: "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training"
   conf: "NSDI'23"
   presenter: Chenyu Lu
