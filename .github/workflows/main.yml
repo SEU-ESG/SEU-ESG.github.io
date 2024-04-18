@@ -34,6 +34,8 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Test slide paths
+        run: npm run test
       - name: Render with ejs
         run: npm run build
       - name: Prepare dist directory
@@ -45,7 +47,7 @@ jobs:
 
   # Deployment job
   deploy:
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' && github.repository_owner == 'SEU-ESG'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

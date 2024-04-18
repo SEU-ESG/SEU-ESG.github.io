@@ -62,8 +62,8 @@
   links:
     - title: TencentMeeting
       url: https://meeting.tencent.com/dm/nLSQZtiSnUtD
-    - title: Slides
-      url: /slides/Combo.pdf
+    # - title: Slides
+    #   url: /slides/Combo.pdf
 - title: "Bolt: Bridging the Gap between Auto-tuners and Hardware-native Performance"
   conf: "MLSys'22"
   presenter: Guangtong Li
