@@ -1,3 +1,14 @@
+- title: "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing"
+  conf: "OSDI'23"
+  presenter: Nanxiang Li
+  date: Apr 26, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/TN3wdET7R1zx
+    - title: Slides
+      url:  /slides/RDMA.pdf
 - title: "RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing"
   conf: "ASPLOS'24"
   presenter: Haodong Tian
