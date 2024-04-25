@@ -6,9 +6,9 @@
   location: Room CS119 @ SEU & Online
   links:
     - title: TencentMeeting
-      url: 
+      url: https://meeting.tencent.com/dm/TN3wdET7R1zx
     - title: Slides
-      url: 
+      url:  /slides/RDMA.pdf
 - title: "RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing"
   conf: "ASPLOS'24"
   presenter: Haodong Tian
