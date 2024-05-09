@@ -1,3 +1,14 @@
+- title: "Optimizing Dynamic Neural Networks with Brainstorm"
+  conf: "OSDI'23"
+  presenter: Mengyang Liu
+  date: May 10, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/yU1O1dnZaGz2
+    - title: Slides
+      url:  /slides/Brainstorm.pdf
 - title: "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing"
   conf: "OSDI'23"
   presenter: Nanxiang Li
