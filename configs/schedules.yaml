@@ -1,3 +1,14 @@
+- title: "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator"
+  conf: "NSDI'23"
+  presenter: Nanxiang Li
+  date: June 14, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/CC0WbDFd2HvR
+    - title: Slides
+      url:  /slides/Doing More with Less.pdf
 - title: "ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models"
   conf: "OSDI'24"
   presenter: Haodong Tian
