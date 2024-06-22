@@ -7,7 +7,7 @@
     <title>
         <%= global.header %>
     </title>
-    <link rel="icon" type="image/png" href="/seu-esg.png" />
+    <link rel="icon" type="image/png" href="/seu.png" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,7 +22,14 @@
             <div class="item">
                 <img src="/seu.png" />
             </div>
-            <a class="item">
+            <!-- Vertical Divider -->
+            <div class="item">
+                |
+            </div>
+            <div class="item">
+                <img src="/seu-esg.png" class="ui tiny image" />
+            </div>
+            <a class="item" href="/">
                 <h2 class="ui header">
                     <%= global.header %>
                 </h2>
@@ -173,6 +180,28 @@
         return schedules.slice(start, end)
     }
 
+    function pager(currentPage, totalPage) {
+        if (totalPage <= 5) {
+            return Array.from({ length: totalPage }, (_, i) => i + 1)
+        }
+        const pages = [];
+        pages.push(1)
+        for (let off = -1; off <= 1; off++) {
+            const page = currentPage + off
+            if (page > 1 && page < totalPage) {
+                pages.push(page)
+            }
+        }
+        pages.push(totalPage)
+        if (pages[1] - pages[0] > 1) {
+            pages.splice(1, 0, -1)
+        }
+        if (pages[pages.length - 1] - pages[pages.length - 2] > 1) {
+            pages.splice(pages.length - 1, 0, -1)
+        }
+        return pages
+    }
+
     function renderPagination(currentPage, totalPage) {
         const container = $('#pagination')[0]
         container.innerHTML = ''
@@ -182,11 +211,18 @@
             prev.innerHTML = '<i class="left chevron icon"></i>'
             container.appendChild(prev)
         }
-        for (let i = 1; i <= totalPage; i++) {
-            const page = document.createElement('a')
-            page.className = i === currentPage ? 'active item' : 'item'
-            page.innerHTML = i
-            container.appendChild(page)
+        for (let i of pager(currentPage, totalPage)) {
+            if (i === -1) {
+                const ellipsis = document.createElement('a')
+                ellipsis.className = 'disabled item'
+                ellipsis.innerHTML = '...'
+                container.appendChild(ellipsis)
+            } else {
+                const page = document.createElement('a')
+                page.className = i === currentPage ? 'active item' : 'item'
+                page.innerHTML = i
+                container.appendChild(page)
+            }
         }
         {
             const next = document.createElement('a')
@@ -213,10 +249,10 @@
                 </a>${schedule.title}</h4>
                 <div class="ui list">
                     <div class="item">
-                        <span class="description">
+                        <a class="description presenter">
                             <i class="user icon"></i>
                             ${schedule.presenter}
-                        </span>
+                        </a>
                     </div>
                     <div class="item">
                         <span class="description">
@@ -242,9 +278,20 @@
         })
     }
 
+    function applyFilter(keyword) {
+        $('#search-input').val(keyword)
+        $('#search-input').trigger('input')
+    }
+
     $(document).ready(() => {
-        renderSchedules(sliceSchedules(filteredSchedules, currentPage));
-        renderPagination(currentPage, totalPage)
+        const keyword = new URLSearchParams(window.location.search).get('q') || ''
+        if (keyword) {
+            applyFilter(keyword)
+        } else {
+            renderSchedules(sliceSchedules(filteredSchedules, currentPage));
+            renderPagination(currentPage, totalPage)
+        }
+        
     })
 
     $('#pagination').on('click', 'a', function () {
@@ -266,7 +313,9 @@
     })
 
     $('#search-input').on('input', function () {
-        const keyword = $(this).val()
+        const keyword = $(this).val().trim()
+        window.history.replaceState({}, '', keyword ? `?q=${keyword}` : '/')
+
         filteredSchedules = filterSchedules(keyword)
 
         currentPage = 1
@@ -277,9 +326,17 @@
     })
 
     $('#schedule-container').on('click', '.label', function () {
-        $('#search-input').val($(this).text().trim())
-        $('#search-input').trigger('input')
+        applyFilter($(this).text().trim())
     })
+
+    $('#schedule-container').on('click', '.presenter', function () {
+        applyFilter($(this).text().trim())
+    })
+
+    window.onpopstate = () => {
+        const keyword = new URLSearchParams(window.location.search).get('q') || ''
+        applyFilter(keyword)
+    }
 </script>
 
 </html>
