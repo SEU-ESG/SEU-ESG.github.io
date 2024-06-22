@@ -1,3 +1,14 @@
+- title: "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator"
+  conf: "NSDI'23"
+  presenter: Nanxiang Li
+  date: June 14, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/CC0WbDFd2HvR
+    - title: Slides
+      url:  /slides/Doing More with Less.pdf
 - title: "ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models"
   conf: "OSDI'24"
   presenter: Haodong Tian
@@ -9,6 +20,17 @@
       url: https://meeting.tencent.com/dm/HLStYbQc263w
     - title: Slides
       url:  /slides/ServerlessLLM.pdf
+- title: "nnPerf: A Real-time On-device Tool Profiling DNN Inference on Mobile Platforms"
+  conf: "SenSys'23"
+  presenter: Guangtong Li
+  date: May 24, 2024.
+  time: 4:30 p.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/XBBCY5CVghPp
+    - title: Slides
+      url:  /slides/nnPerf.pdf
 - title: "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concurrent Execution"
   conf: "MobiSys'24"
   presenter: Ye Wan
