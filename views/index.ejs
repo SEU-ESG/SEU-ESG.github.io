@@ -12,6 +12,25 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <style>
+        /* By default, show pc-only and hide mobile-only */
+        .pc-only {
+            display: flex!important;
+        }
+        .mobile-only {
+            display: none!important;
+        }
+
+        /* For screen widths up to 767px */
+        @media screen and (max-width: 767px) {
+            .pc-only {
+                display: none!important;
+            }
+            .mobile-only {
+                display: flex!important;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -244,16 +263,6 @@
         }
     }
 
-    function checkScreenSize() {
-        if ($(window).width() < 768) {
-            $('.pc-only').hide()
-            $('.mobile-only').show()
-        } else {
-            $('.pc-only').show()
-            $('.mobile-only').hide()
-        }
-    }
-
     function renderSchedules(schedules) {
         const container = $('#schedule-container')[0]
         container.innerHTML = ''
@@ -307,7 +316,6 @@
                 </div>
             `
             container.appendChild(div)
-            checkScreenSize()
         })
     }
 
@@ -324,8 +332,6 @@
             renderSchedules(sliceSchedules(filteredSchedules, currentPage));
             renderPagination(currentPage, totalPage)
         }
-        checkScreenSize()
-        $(window).resize(checkScreenSize)
     })
 
     $('#pagination').on('click', 'a', function () {
