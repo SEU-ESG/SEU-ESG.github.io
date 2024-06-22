@@ -17,16 +17,26 @@
 <body>
     <!-- Semantic UI Container -->
     <div class="ui container">
-        <!-- Page Header -->
-        <div class="ui large text menu">
+        <div class="ui large text menu mobile-only">
             <div class="item">
                 <img src="/seu.png" />
             </div>
-            <!-- Vertical Divider -->
             <div class="item">
                 |
             </div>
             <div class="item">
+                <img src="/seu-esg.png" class="ui tiny image" />
+            </div>
+        </div>
+        <!-- Page Header -->
+        <div class="ui large text menu">
+            <div class="item pc-only">
+                <img src="/seu.png" />
+            </div>
+            <div class="item pc-only">
+                |
+            </div>
+            <div class="item pc-only">
                 <img src="/seu-esg.png" class="ui tiny image" />
             </div>
             <a class="item" href="/">
@@ -234,6 +244,16 @@
         }
     }
 
+    function checkScreenSize() {
+        if ($(window).width() < 768) {
+            $('.pc-only').hide()
+            $('.mobile-only').show()
+        } else {
+            $('.pc-only').show()
+            $('.mobile-only').hide()
+        }
+    }
+
     function renderSchedules(schedules) {
         const container = $('#schedule-container')[0]
         container.innerHTML = ''
@@ -273,15 +293,21 @@
                             ${linksHTML}
                         </span>
                     </div>
-                    ${schedule.dblp ? `<div class="item">
+                    ${schedule.dblp ? `<div class="item pc-only">
                         <span class="description">
                             <i class="file pdf icon"></i>
                             <a href="${schedule.dblp.url}" target="_blank">${schedule.dblp.url}</a>
+                        </span>
+                    </div><div class="item mobile-only">
+                        <span class="description">
+                            <i class="file pdf icon"></i>
+                            <a href="${schedule.dblp.url}" target="_blank">DOI</a>
                         </span>
                     </div>` : ''}
                 </div>
             `
             container.appendChild(div)
+            checkScreenSize()
         })
     }
 
@@ -298,7 +324,8 @@
             renderSchedules(sliceSchedules(filteredSchedules, currentPage));
             renderPagination(currentPage, totalPage)
         }
-        
+        checkScreenSize()
+        $(window).resize(checkScreenSize)
     })
 
     $('#pagination').on('click', 'a', function () {
