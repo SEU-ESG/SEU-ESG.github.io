@@ -140,8 +140,9 @@
     </div>
 </body>
 
+<script src="/schedules.js"></script>
+
 <script>
-    const schedules = <%- JSON.stringify(schedules) %>
     const schedulesPerPage = <%- global.layout.schedulesPerPage %>
 </script>
 
@@ -272,6 +273,12 @@
                             ${linksHTML}
                         </span>
                     </div>
+                    ${schedule.dblp ? `<div class="item">
+                        <span class="description">
+                            <i class="file pdf icon"></i>
+                            <a href="${schedule.dblp.url}" target="_blank">${schedule.dblp.url}</a>
+                        </span>
+                    </div>` : ''}
                 </div>
             `
             container.appendChild(div)

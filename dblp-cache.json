@@ -1,0 +1,140 @@
+{
+  "ServerlessLLM: Locality-Enhanced Serverless Inference for Large Language Models": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.48550/arXiv.2401.14351"
+  },
+  "CoActo: CoActive Neural Network Inference Offloading with Fine-grained and Concurrent Execution": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.1145/3643832.3661885"
+  },
+  "Optimizing Dynamic Neural Networks with Brainstorm": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/osdi23/presentation/cui"
+  },
+  "No Provisioned Concurrency: Fast RDMA-codesigned Remote Fork for Serverless Computing": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/osdi23/presentation/wei-rdma"
+  },
+  "RainbowCake: Mitigating Cold-starts in Serverless with Layer-wise Container Caching and Sharing": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.1145/3617232.3624871"
+  },
+  "Zeus: Understanding and Optimizing GPU Energy Consumption of DNN Training": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/nsdi23/presentation/you"
+  },
+  "PockEngine: Sparse and Efficient Fine-tuning in a Pocket": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.1145/3613424.3614307"
+  },
+  "Liquid: Intelligent Resource Estimation and Network-Efficient Scheduling for Deep Learning Jobs on DistributeGPU Clusters": null,
+  "Astrea: Auto-Serverless Analytics Towards Cost-Efficiency and QoS-Awareness": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.1109/TPDS.2022.3172069"
+  },
+  "Maximizing the Utilization of GPUs Used by Cloud Gaming through Adaptive Co-location with Combo": {
+    "source": "DBLP",
+    "url": "https://doi.org/10.1145/3620678.3624660"
+  },
+  "Bolt: Bridging the Gap between Auto-tuners and Hardware-native Performance": {
+    "source": "DBLP",
+    "url": "https://proceedings.mlsys.org/paper_files/paper/2022/hash/1f8053a67ec8e0b57455713cefdd8218-Abstract.html"
+  },
+  "SpaceEvo: Hardware-Friendly Search Space Design for Efficient INT8 Inference": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.48550/arxiv.2303.08308"
+  },
+  "Amanda: Unified Instrumentation Framework for Deep Neural Networks": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3617232.3624864"
+  },
+  "Golgi: Performance-Aware, Resource-Efficient Function Scheduling for Serverless Computing": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3620678.3624645"
+  },
+  "Cost-effective On-device Continual Learning over Memory Hierarchy with Miro": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3570361.3613297"
+  },
+  "DepGraph: Towards Any Structural Pruning": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1109/cvpr52729.2023.01544"
+  },
+  "NN-Stretch: Automatic Neural Network Branching for Parallel Inference on Heterogeneous Multi-Processors": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3581791.3596870"
+  },
+  "LUT-NN: Empower Efficient Neural Network Inference with Centroid Learning and Table Lookup": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3570361.3613285"
+  },
+  "AQUATOPE: QoS-and-Uncertainty-Aware Resource Management for Multi-stage Serverless Workflows": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3567955.3567960"
+  },
+  "ElasticTrainer: Speeding Up On-Device Training with Runtime Elastic Tensor Selection": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3581791.3596852"
+  },
+  "INFless: A Native Serverless System for Low-Latency, High-Throughput Inference": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3503222.3507709"
+  },
+  "ConvReLU++: Reference-based Lossless Acceleration of Conv-ReLU Operations on Mobile CPU": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3581791.3596831"
+  },
+  "BeeHive: Sub-second Elasticity for Web Services with Semi-FaaS Execution": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3575693.3575752"
+  },
+  "Understanding and Optimizing Deep Learning Cold-Start Latency on Edge Devices": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.48550/arXiv.2206.07446"
+  },
+  "ModelKeeper: Accelerating DNN Training via Automated Training Warmup": null,
+  "AStitch: Enabling a New Multi-dimensional Optimization Space for Memory-Intensive ML Training and Inferencon Modern SIMT Architectures": null,
+  "Hyperion: A Generic and Distributed Mobile Offloading Framework on OpenCL": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3560905.3568511"
+  },
+  "ROLLER: Fast and Efficient Tensor Compilation for Deep Learning": null,
+  "TLP: A Deep Learning-Based Cost Model for Tensor Program Tuning": {
+    "source": "OpenAlex",
+    "url": "https://doi.org/10.1145/3575693.3575737"
+  },
+  "BlastNet: Exploiting Duo-Blocks for Cross-Processor Real-Time DNN Inference": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3560905.3568520"
+  },
+  "Melon: Breaking the Memory Wall for Resource-Efficient On-Device Machine Learning": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3498361.3538928"
+  },
+  "Romou: rapidly generate high-performance tensor kernels for mobile GPUs": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3495243.3517020"
+  },
+  "Real-time neural network inference on extremely weak devices: agile offloading with explainable AI": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3495243.3560551"
+  },
+  "Band: coordinated multi-DNN inference on heterogeneous mobile processors": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3498361.3538948"
+  },
+  "CoDL: Efficient CPU-GPU Co-Execution for Deep Learning Inference on Mobile Devices": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3498361.3538932"
+  },
+  "nn-Meter: Towards Accurate Latency Prediction of Deep-Learning Model Inference on Diverse Edge Devices": {
+    "source": "Semantic Scholar",
+    "url": "https://doi.org/10.1145/3458864.3467882"
+  },
+  "Cachew: Machine Learning Input Data Processing as a Service": null,
+  "Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training": null,
+  "Soter: Guarding Black-box Inference for General Neural Networks at the Edge": null,
+  "Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference": null,
+  "Tetris: Memory-efficient Serverless Inference through Tensor Sharing": null,
+  "Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing": null
+}
