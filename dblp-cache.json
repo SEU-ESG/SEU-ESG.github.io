@@ -92,13 +92,19 @@
     "source": "Semantic Scholar",
     "url": "https://doi.org/10.48550/arXiv.2206.07446"
   },
-  "ModelKeeper: Accelerating DNN Training via Automated Training Warmup": null,
+  "ModelKeeper: Accelerating DNN Training via Automated Training Warmup": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/nsdi23/presentation/lai-fan"
+  },
   "AStitch: Enabling a New Multi-dimensional Optimization Space for Memory-Intensive ML Training and Inferencon Modern SIMT Architectures": null,
   "Hyperion: A Generic and Distributed Mobile Offloading Framework on OpenCL": {
     "source": "Semantic Scholar",
     "url": "https://doi.org/10.1145/3560905.3568511"
   },
-  "ROLLER: Fast and Efficient Tensor Compilation for Deep Learning": null,
+  "ROLLER: Fast and Efficient Tensor Compilation for Deep Learning": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/osdi22/presentation/zhu"
+  },
   "TLP: A Deep Learning-Based Cost Model for Tensor Program Tuning": {
     "source": "OpenAlex",
     "url": "https://doi.org/10.1145/3575693.3575737"
@@ -131,10 +137,30 @@
     "source": "Semantic Scholar",
     "url": "https://doi.org/10.1145/3458864.3467882"
   },
-  "Cachew: Machine Learning Input Data Processing as a Service": null,
-  "Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training": null,
-  "Soter: Guarding Black-box Inference for General Neural Networks at the Edge": null,
+  "Cachew: Machine Learning Input Data Processing as a Service": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/atc22/presentation/graur"
+  },
+  "Campo: Cost-Aware Performance Optimization for Mixed-Precision Neural Network Training": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/atc22/presentation/he"
+  },
+  "Soter: Guarding Black-box Inference for General Neural Networks at the Edge": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/atc22/presentation/shen"
+  },
   "Microsecond-scale Preemption for Concurrent GPU-accelerated DNN Inference": null,
-  "Tetris: Memory-efficient Serverless Inference through Tensor Sharing": null,
-  "Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing": null
+  "Tetris: Memory-efficient Serverless Inference through Tensor Sharing": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/atc22/presentation/li-jie"
+  },
+  "Serving Heterogeneous Machine Learning Models on Multi-GPU Servers with Spatio-Temporal Sharing": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/atc22/presentation/choi-seungbeom"
+  },
+  "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/nsdi23/presentation/liu-david"
+  },
+  "nnPerf: A Real-time On-device Tool Profiling DNN Inference on Mobile Platforms": null
 }
