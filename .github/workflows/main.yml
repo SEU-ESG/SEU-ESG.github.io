@@ -39,7 +39,7 @@ jobs:
       - name: Render with ejs
         run: npm run build
       - name: Prepare dist directory
-        run: mkdir -p dist && mv slides *.png *.html dist
+        run: mkdir -p dist && mv slides schedules.js *.png *.html dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
