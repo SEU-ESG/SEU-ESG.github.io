@@ -1,3 +1,14 @@
+- title: "Can't Be Late: Optimizing Spot Instance Savings under Deadlines"
+  conf: "NSDI'24"
+  presenter: Yongyi Wang
+  date: July 4, 2024.
+  time: 9:30 a.m.
+  location: Room CS119 @ SEU & Online
+  links:
+    - title: TencentMeeting
+      url: https://meeting.tencent.com/dm/aqtSSqHRJzv8
+    - title: Slides
+      url:  /slides/Can't be late.pdf
 - title: "Doing More with Less: Orchestrating Serverless Applications without an Orchestrator"
   conf: "NSDI'23"
   presenter: Nanxiang Li
