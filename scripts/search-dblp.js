@@ -192,21 +192,4 @@ async function searchPaper(title) {
   return result;
 }
 
-// // Usage example
-// async function main() {
-//   const title = "Soter: Guarding Black-box Inference for General Neural Networks at the Edge";
-//   try {
-//     const result = await searchSemanticScholar(title);
-//     if (result) {
-//       console.log(`Found paper URL: ${result.url}`);
-//     } else {
-//       console.log("No DOI found for the given title.");
-//     }
-//   } catch (error) {
-//     console.error('Error in main:', error);
-//   }
-// }
-
-// main();
-
 module.exports = searchPaper;

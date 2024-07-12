@@ -11,5 +11,11 @@ links:
 layout:
   schedulesPerPage: 5
 
+avatar:
+  primary: /assets/seu.png
+  secondary: /assets/seu-esg.png
+
+favicon: /assets/seu.png
+
 header: Edge System Reading Group @ SEU
-footer: 2024 SEU-ESG. Powered by GitHub Pages.
+footer: 2024 SEU-ESG. Powered by [GitHub Pages](https://pages.github.com) and [EJS](https://ejs.co/).
