@@ -1,5 +1,5 @@
 const ejs = require('ejs');
-const minify = require('html-minifier').minify;
+const { minify } = require('html-minifier-terser');
 const yaml = require('js-yaml');
 const fs = require('fs');
 const path = require('path');
@@ -57,7 +57,7 @@ const blogs = fs.readdirSync('blog')
     }
   }
   return schedules;
-})().then(schedules => {
+})().then(async schedules => {
   // Write schedules to /schedules.json
   fs.writeFileSync('dist/schedules.js', `var schedules = ${JSON.stringify(schedules)}`);
 
@@ -66,7 +66,7 @@ const blogs = fs.readdirSync('blog')
   global.upcoming = `${latest.presenter} will present a/an ${latest.conf} paper on ${latest.time}, ${latest.date} at ${latest.location}.`;
 
   // Render index.ejs
-  const index = minify(ejs.render(fs.readFileSync('views/index.ejs', 'utf8'), { global, blogs, schedules }), {
+  const index = await minify(ejs.render(fs.readFileSync('views/index.ejs', 'utf8'), { global, blogs, schedules }), {
     collapseWhitespace: true,
     removeComments: true,
     minifyJS: true,
@@ -74,7 +74,7 @@ const blogs = fs.readdirSync('blog')
   });
 
   // Render blog.ejs
-  const blog = minify(ejs.render(fs.readFileSync('views/blog.ejs', 'utf8'), { global, blogs }), {
+  const blog = await minify(ejs.render(fs.readFileSync('views/blog.ejs', 'utf8'), { global, blogs }), {
     collapseWhitespace: true,
     removeComments: true,
     minifyJS: true,

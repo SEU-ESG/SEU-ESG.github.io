@@ -144,7 +144,11 @@ function saveCache(title, result) {
   }
   const cache = JSON.parse(fs.readFileSync('dblp-cache.json', 'utf8'));
   cache[title] = result;
-  fs.writeFileSync('dblp-cache.json', JSON.stringify(cache, null, 2));
+  if (process.platform === 'win32') {
+    fs.writeFileSync('dblp-cache.json', JSON.stringify(cache, null, 2).replace(/\n/g, '\r\n'));
+  } else {
+    fs.writeFileSync('dblp-cache.json', JSON.stringify(cache, null, 2));
+  }
 }
 
 async function _searchPaper(title) {
