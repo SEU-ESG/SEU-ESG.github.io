@@ -162,5 +162,9 @@
     "source": "DBLP",
     "url": "https://www.usenix.org/conference/nsdi23/presentation/liu-david"
   },
-  "nnPerf: A Real-time On-device Tool Profiling DNN Inference on Mobile Platforms": null
+  "nnPerf: A Real-time On-device Tool Profiling DNN Inference on Mobile Platforms": null,
+  "Can't Be Late: Optimizing Spot Instance Savings under Deadlines": {
+    "source": "DBLP",
+    "url": "https://www.usenix.org/conference/nsdi24/presentation/wu-zhanghao"
+  }
 }
