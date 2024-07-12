@@ -31,6 +31,9 @@ function render(md) {
 const global = yaml.load(fs.readFileSync('configs/global.yaml'), 'utf8');
 const schedules = yaml.load(fs.readFileSync('configs/schedules.yaml'), 'utf8');
 
+// Render global.footer, remove the outer <p> tag
+global.footer = render(global.footer).replace(/^<p>|<\/p>$/g, '');
+
 // Read the blog posts from /blog, sort by date
 const blogs = fs.readdirSync('blog')
   .map(file => {
